@@ -29,6 +29,7 @@ class Perso extends Component  {
          context.authenticated ? <p>authentication</p> : <p>pls log in</p>}   
           </Authcontext.Consumer>
       <p key = 'i1' onClick={this.props.click}>i am a {this.props.name} and i am {this.props.age} years old</p>
+         <p>(click the test above to delete)</p>
       <p key ='i2'>{this.props.children}</p>
       <input key ='i3'
       ref={(inputEl) => {this.inputelement = inputEl}}
